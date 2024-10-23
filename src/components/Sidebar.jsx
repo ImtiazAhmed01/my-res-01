@@ -2,7 +2,7 @@
 
 const Sidebar = () => {
     return (
-        <div>
+        <div className="nd:w-1/3">
             <h1>sidebars</h1>
         </div>
     );

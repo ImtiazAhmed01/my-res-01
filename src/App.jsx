@@ -17,7 +17,9 @@ const App = () => {
       {/* recipe card section */}
       <section className="flex flex-col md:flex-row gap-6">
         {/* card section */}
-        <Recipes></Recipes>
+        <Recipes>
+
+        </Recipes>
 
         {/* sidebar section */}
         <Sidebar></Sidebar>
