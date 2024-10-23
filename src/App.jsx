@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Recipe from "./components/Recipe";
 import Recipes from "./components/Recipes";
 import Sidebar from "./components/Sidebar";
+import { HashRouter } from "react-router-dom"
 
 
 
@@ -10,24 +11,26 @@ import Sidebar from "./components/Sidebar";
 
 const App = () => {
   return (
-    <div className="container mx-auto px-4">
-      <Header></Header>
-      <Banner></Banner>
-      <Recipe></Recipe>
-      {/* recipe card section */}
-      <section className="flex flex-col md:flex-row gap-6">
-        {/* card section */}
-        <Recipes>
+    <HashRouter>
+      <div className="container mx-auto px-4">
+        <Header></Header>
+        <Banner></Banner>
+        <Recipe></Recipe>
+        {/* recipe card section */}
+        <section className="flex flex-col md:flex-row gap-6">
+          {/* card section */}
+          <Recipes>
 
-        </Recipes>
+          </Recipes>
 
-        {/* sidebar section */}
-        <Sidebar></Sidebar>
+          {/* sidebar section */}
+          <Sidebar></Sidebar>
 
 
-      </section>
+        </section>
 
-    </div>
+      </div>
+    </HashRouter>
   );
 };
 
